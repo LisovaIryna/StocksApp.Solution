@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StocksApp.Services.Tests", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StocksApp.Controllers.Tests", "StocksApp.Controllers.Tests\StocksApp.Controllers.Tests.csproj", "{8BE980B7-6637-4A96-B76A-131F2CB00B31}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StocksApp.Integration.Tests", "StocksApp.Integration.Tests\StocksApp.Integration.Tests.csproj", "{7B143414-5950-48FF-80DF-3E2C4F01ED72}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +45,10 @@ Global
 		{8BE980B7-6637-4A96-B76A-131F2CB00B31}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8BE980B7-6637-4A96-B76A-131F2CB00B31}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8BE980B7-6637-4A96-B76A-131F2CB00B31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B143414-5950-48FF-80DF-3E2C4F01ED72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B143414-5950-48FF-80DF-3E2C4F01ED72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B143414-5950-48FF-80DF-3E2C4F01ED72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B143414-5950-48FF-80DF-3E2C4F01ED72}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -53,6 +59,7 @@ Global
 		{2BC121B0-9322-44D8-8E17-F8E84AB9F331} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{1758B7EC-0C92-4F3C-906E-ECDB14711917} = {59713777-9B94-4D0C-B420-A8C6F07055F4}
 		{8BE980B7-6637-4A96-B76A-131F2CB00B31} = {59713777-9B94-4D0C-B420-A8C6F07055F4}
+		{7B143414-5950-48FF-80DF-3E2C4F01ED72} = {59713777-9B94-4D0C-B420-A8C6F07055F4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F59933B0-7A45-4103-BDE9-6019372FFAB8}
