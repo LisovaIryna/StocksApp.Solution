@@ -9,6 +9,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{02EA681E-C7D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StocksApp.Core", "StocksApp.Core\StocksApp.Core.csproj", "{3000C496-35E4-44A3-8A6A-8F7F31D0E547}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StocksApp.Infrastructure", "StocksApp.Infrastructure\StocksApp.Infrastructure.csproj", "{B0327C8F-FFA3-42D5-ACEB-14043186F103}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,10 @@ Global
 		{3000C496-35E4-44A3-8A6A-8F7F31D0E547}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3000C496-35E4-44A3-8A6A-8F7F31D0E547}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3000C496-35E4-44A3-8A6A-8F7F31D0E547}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0327C8F-FFA3-42D5-ACEB-14043186F103}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0327C8F-FFA3-42D5-ACEB-14043186F103}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0327C8F-FFA3-42D5-ACEB-14043186F103}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0327C8F-FFA3-42D5-ACEB-14043186F103}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -30,6 +36,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{7FCE64C7-DE3C-49D4-97BC-AC58CCDEEC95} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{3000C496-35E4-44A3-8A6A-8F7F31D0E547} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{B0327C8F-FFA3-42D5-ACEB-14043186F103} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F59933B0-7A45-4103-BDE9-6019372FFAB8}
