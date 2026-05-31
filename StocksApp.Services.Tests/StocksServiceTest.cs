@@ -1,11 +1,9 @@
 using AutoFixture;
 using FluentAssertions;
-using Microsoft.EntityFrameworkCore;
 using Moq;
 using RepositoryContracts;
 using ServiceContracts.StocksService;
 using ServiceContracts.DTO;
-using Services;
 using Services.StocksService;
 
 namespace Tests.ServiceTests;
@@ -36,9 +34,9 @@ public class StocksServiceTest
         BuyOrderRequest? buyOrderRequest = null;
 
         // Mock
-        BuyOrder buyOrder = _fixture.Build<BuyOrder>().Create();
+        BuyOrder buyOrderFixture = _fixture.Build<BuyOrder>().Create();
         _stocksRepositoryMock.Setup(temp => temp.CreateBuyOrder(It.IsAny<BuyOrder>()))
-            .ReturnsAsync(buyOrder);
+            .ReturnsAsync(buyOrderFixture);
 
         // Act
         Func<Task> action = async() =>
@@ -170,7 +168,7 @@ public class StocksServiceTest
     }
 
     [Fact]
-    public async Task CreateBuyOrder_BuyOrderDateAndTimeOfOrderOlderThan2000_ToBeArgumentexception()
+    public async Task CreateBuyOrder_BuyOrderDateAndTimeOfOrderOlderThan2000_ToBeArgumentException()
     {
         // Arrange
         BuyOrderRequest? buyOrderRequest = _fixture.Build<BuyOrderRequest>()
@@ -225,9 +223,9 @@ public class StocksServiceTest
         SellOrderRequest? sellOrderRequest = null;
 
         // Mock
-        SellOrder sellOrder = _fixture.Build<SellOrder>().Create();
+        SellOrder sellOrderFixture = _fixture.Build<SellOrder>().Create();
         _stocksRepositoryMock.Setup(temp => temp.CreateSellOrder(It.IsAny<SellOrder>()))
-            .ReturnsAsync(sellOrder);
+            .ReturnsAsync(sellOrderFixture);
 
         // Act
         Func<Task> action = async() =>

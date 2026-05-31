@@ -3,7 +3,7 @@
 namespace ServiceContracts.DTO;
 
 /// <summary>
-/// DTO class that represents a buy order to purchase
+/// DTO class that represents a buy order to purchase the stocks - that can be used while inserting / updating
 /// </summary>
 public class BuyOrderRequest : IValidatableObject, IOrderRequest
 {
@@ -37,6 +37,7 @@ public class BuyOrderRequest : IValidatableObject, IOrderRequest
     {
         List<ValidationResult> results = new();
 
+        // Date of order should be less that Jan 01, 2000
         if (DateAndTimeOfOrder < Convert.ToDateTime("2000-01-01"))
             results.Add(new ValidationResult("Order date should not be older than Jan 01, 2000"));
 

@@ -6,7 +6,7 @@ using StocksApp.Models;
 namespace StocksApp.Filters.ActionFilters;
 
 /// <summary>
-/// An action filter that applies model validation to SellOrder() and BuyOrder() 
+/// An action filter that applies model validation to SellOrder() and BuyOrder() action methods in TradeController
 /// </summary>
 public class CreateOrderActionFilter : IAsyncActionFilter
 {
@@ -36,14 +36,10 @@ public class CreateOrderActionFilter : IAsyncActionFilter
                         StockSymbol = orderRequest.StockSymbol,
                         Quantity = orderRequest.Quantity
                     };
-                    context.Result = tradeController.View(nameof(TradeController.Index), stockTrade);
+                    context.Result = tradeController.View(nameof(TradeController.Index), stockTrade); // short-circuits or skips the subsequent action filters & action method
                 }
-                else
-                    await next();
             }
-            else
-                await next();
         }
-        await next();
+        await next(); // invokes the subsequent filter or action method
     }
 }

@@ -1,7 +1,7 @@
 ﻿namespace ServiceContracts.DTO;
 
 /// <summary>
-/// DTO class that represents a buy order to purchase the stocks
+/// DTO class that represents a buy order to purchase the stocks - that can be used as return type of Stocks service
 /// </summary>
 public class BuyOrderResponse : IOrderResponse
 {

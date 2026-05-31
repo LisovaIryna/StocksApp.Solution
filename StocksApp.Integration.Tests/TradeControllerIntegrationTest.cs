@@ -18,6 +18,8 @@ public class TradeControllerIntegrationTest : IClassFixture<CustomWebApplication
     [Fact]
     public async Task Index_ToReturnView()
     {
+        // Arrange
+
         // Act
         HttpResponseMessage response = await _client.GetAsync("/Trade/Index/MSFT");
 

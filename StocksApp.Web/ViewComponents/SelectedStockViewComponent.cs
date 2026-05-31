@@ -5,7 +5,7 @@ using Microsoft.Extensions.Options;
 
 namespace StocksApp.ViewComponents;
 
-public class SelectedStockViewComponent :ViewComponent
+public class SelectedStockViewComponent : ViewComponent
 {
     private readonly TradingOptions _tradingOptions;
     private readonly IBuyOrdersService _stocksBuyOrdersService;

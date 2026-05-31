@@ -1,11 +1,9 @@
 ﻿using AutoFixture;
-using Castle.Core.Logging;
 using FluentAssertions;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Moq;
-using ServiceContracts;
 using ServiceContracts.FinnhubService;
 using StocksApp;
 using StocksApp.Controllers;
